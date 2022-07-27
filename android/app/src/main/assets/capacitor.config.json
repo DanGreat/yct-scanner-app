@@ -1,0 +1,6 @@
+{
+	"appId": "com.yabatech.appscanner",
+	"appName": "yct-scanner",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

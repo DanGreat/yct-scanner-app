@@ -1,27 +1,23 @@
-#container {
-  text-align: center;
+ion-content {
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  img {
+    width: 127px;
+    height: 130px;
+    border-radius: 8px;
+  }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+  ion-list {
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+    ion-item {
 
-  color: #8c8c8c;
+      margin-top: 1em;
 
-  margin: 0;
-}
+      div {
 
-#container a {
-  text-decoration: none;
+        p{
+          margin: 10px 0 0 0;
+        }
+      }
+    }
+  }
 }

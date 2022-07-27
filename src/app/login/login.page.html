@@ -1,0 +1,25 @@
+<ion-content class="ion-padding">
+
+  <img src="../../assets/yct-logo.png" alt="">
+  <h3 class="ion-text-center">Login to Verify</h3>
+
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" name="email" [(ngModel)]="paylaod.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" name="password" [(ngModel)]="paylaod.password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button (click)="login()" expand="block">
+      LOG IN
+    </ion-button>
+  </form>
+
+
+</ion-content>

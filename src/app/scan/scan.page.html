@@ -1,0 +1,29 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title> Verification Scanner </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+  [fullscreen]="true" class="ion-padding"
+  [style.--background]="scanActive?'#00000000':'#ffffff'"
+>
+
+  <img src="../../assets/yct-logo.png" alt="" [hidden]="scanActive">
+  <h3 class="ion-text-center" [hidden]="scanActive">Verify Student By Scanning their Barcode</h3>
+  <ion-button expand="block" (click)="startScanner()" [hidden]="scanActive">
+    SCAN CODE
+  </ion-button>
+
+  <ion-row class="scan-button" [hidden]="!scanActive">
+    <ion-col>
+      <ion-button expand="block" (click)="stopScanner()">Stop</ion-button>
+    </ion-col>
+  </ion-row>
+  <div class="scan-box" [hidden]="!scanActive"></div>
+</ion-content>
